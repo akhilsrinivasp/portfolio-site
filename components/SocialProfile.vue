@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav class="navbar">
+        <nav class="navbar" :class="{ 'navbar-blue': scrolled }">
             <div class="socials">
                 <a href="https://www.linkedin.com/in/akhilsrinivasp/" target="_blank">
                     <Icon name="uil:linkedin" color="white" class="icon-class" />
@@ -24,7 +24,22 @@
 </template>
 <script>
 export default {
-
+    data() {
+        return {
+            scrolled: false,
+        }
+    },
+    mounted() {
+        window.addEventListener('scroll', this.handleScroll);
+    },
+    beforeDestroy() {
+        window.removeEventListener('scroll', this.handleScroll);
+    },
+    methods: {
+        handleScroll() {
+            this.scrolled = window.scrollY > 35;
+        },
+    },
 }
 </script>
 <style scoped>
@@ -34,10 +49,14 @@ export default {
     justify-content: space-between;
     align-items: center;
     color: #ffffff;
-    transition: background-color 0.2s ease-in-out;
-    padding: 0 28%;
+    padding: 0 28% 0;
     top: 0;
     width: 100%;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.navbar-blue {
+    background-color: #1a202c;
 }
 
 .socials {
@@ -65,7 +84,7 @@ export default {
     font-size: 3rem;
     color: #4fd1c5;
     padding: 0 2%;
-    padding-top: 3%;
+    padding-top: 0%;
     text-align: center;
     text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
