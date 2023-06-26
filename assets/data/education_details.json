@@ -1,0 +1,55 @@
+[
+    {
+        "degree": "Bachelor of Technology in Computer Science and Engineering",
+        "college": "Vellore Institute of Technology, Vellore",
+        "year": "2010 - 2024",
+        "grade": "9.31 CGPA",
+        "courses": [
+            "Introduction to Web Programming",
+            "Data Structures and Algorithms",
+            "Operating Systems",
+            "Computer Networks",
+            "Database Management Systems",
+            "Software Engineering",
+            "Cyber Security"
+        ]
+    },
+    {
+        "degree": "Bachelors of Science in Data Science and Applications",
+        "college": "Indian Institute of Technology, Madras",
+        "year": "2021 - 2024",
+        "grade": "8.1 CGPA",
+        "courses": [
+            "Modern Application Development",
+            "Java Programming",
+            "Data Structures and Algorithms",
+            "Machine Learning"
+        ]
+    },
+    {
+        "degree": "12th Grade, CBSE",
+        "college": "Accord School, Chiguruwada",
+        "year": "2018 - 2020",
+        "grade": "95.4%",
+        "courses": [
+            "Physics",
+            "Chemistry",
+            "Mathematics",
+            "Computer Science",
+            "English"
+        ]
+    },
+    {
+        "degree": "10th Grade, CBSE",
+        "college": "Edify School, Tiruchanoor",
+        "year": "2017 - 2018",
+        "grade": "90.6%",
+        "courses": [
+            "Mathematics",
+            "Science",
+            "French",
+            "English",
+            "Social Studies"
+        ]
+    }
+]

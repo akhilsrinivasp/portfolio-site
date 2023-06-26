@@ -10,8 +10,17 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18",
     "nuxt": "^3.6.0",
+    "nuxt-icon": "^0.4.1",
     "typescript": "latest"
+  },
+  "dependencies": {
+    "intersection-observer": "^0.12.2",
+    "scrollreveal": "^4.0.9",
+    "three": "^0.153.0",
+    "vue-device-detector": "^1.1.6",
+    "vue-scroll-reveal": "^2.1.0"
   }
 }

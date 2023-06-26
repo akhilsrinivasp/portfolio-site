@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Marck Script';
+    src: url('../fonts/MarckScript-Regular.ttf');
+  }
+  
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+body {
+  background-color: #1a202c;
+  font-family: 'Montserrat';
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+    transform: translateY(-100px);
+}
