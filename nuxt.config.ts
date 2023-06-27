@@ -10,9 +10,18 @@ export default defineNuxtConfig({
   },
   modules: [
     '@nuxtjs/tailwindcss',
-    'nuxt-icon'
+    'nuxt-icon',
+    '@nuxtjs/google-fonts'
   ],
   css: [
     '/assets/css/styles.css'
   ],
+  googleFonts: {
+    families: {
+      'Montserrat': true,
+      'Marck Script': true,
+    },
+    display: 'swap',
+    prefetch: true,
+  },
 })
