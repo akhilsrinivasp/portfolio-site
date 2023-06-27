@@ -1,5 +1,6 @@
 <template>
     <div>
+        <SiteUnderConstruction align="center"/>
     </div>
 </template>
 <script>
