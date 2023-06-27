@@ -10,8 +10,12 @@
                 <span class="cursor">|</span>
             </h1>
             <div class="description">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae iusto reiciendis alias delectus, dolores
-                impedit nisi aliquam ad, sed cumque quo cum iure. Veniam modi sunt tempora nesciunt in esse?
+                Welcome to the digital realm where creativity thrives,
+                A symphony of ideas, where imagination takes its dives.
+            </div>
+            <div class="description">
+                Step into my virtual abode, a kaleidoscope of passion and dreams,
+                Where pixels dance and words weave, unveiling endless streams.
             </div>
         </div>
     </div>

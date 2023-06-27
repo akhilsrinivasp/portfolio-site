@@ -20,6 +20,7 @@ header {
     padding: 0;
     background-color: #1a202c;
     background-image: linear-gradient(315deg, #1a202c 0%, #2d3748 25%, #4a5568 50%, #2d3748 75%, #1a202c 100%);
+    background-image: linear-gradient(135deg, #16213E 0%, #274156 30%, #1C2E4A 70%, #0E1E34 100%);
 }
 .link {
     font-family: 'Montserrat', sans-serif;
