@@ -21,7 +21,7 @@
     </div>
 </template>
   
-<script>
+<script lang="ts">
 export default {
     data() {
         return {
@@ -41,8 +41,8 @@ export default {
             }
         },
         animateTextTyping() {
-            const defaultText = "I am ";
-            const messages = [
+            const defaultText: string = "I am ";
+            const messages: string[] = [
                 "a Student!",
                 "a Software Engineer!",
                 "a Full Stack Developer!",
@@ -53,24 +53,24 @@ export default {
                 "working with MERN Stack.",
                 "working with AWS!",
             ];
-            const speed = 70;
+            const speed: number = 100; 
             let index = 0;
 
             const typeNextCharacter = () => {
                 if (index < defaultText.length) {
-                    this.$refs.defaultText.textContent += defaultText.charAt(index);
+                    (this.$refs.defaultText as HTMLElement).textContent += defaultText.charAt(index) as string;
                     index++;
                     setTimeout(typeNextCharacter, speed);
                 } else {
                     if (messages.length > 0) {
-                        const message = messages.shift();
+                        const message: string = messages.shift() as string;
                         // set a delay of 5 seconds before deleting the message
                         this.typeMessage(message, () => {
                             setTimeout(() => {
                                 this.deleteMessage(message, () => {
                                     typeNextCharacter();
                                 });
-                            }, 1250);
+                            }, 1500);
                             this.blinkCursor();
                         });
                         messages.push(message);
@@ -80,13 +80,13 @@ export default {
 
             typeNextCharacter();
         },
-        typeMessage(message, callback) {
-            const speed = 70; // Typing speed (in milliseconds)
-            let index = 0;
+        typeMessage(message: string, callback: () => void) {
+            const speed :number = 70; // Typing speed (in milliseconds)
+            let index :number = 0;
 
-            const typeNextCharacter = () => {
+            const typeNextCharacter :() => void = () => {
                 if (index < message.length) {
-                    this.$refs.typedText.textContent += message.charAt(index);
+                    (this.$refs.typedText as HTMLElement).textContent += message.charAt(index);
                     index++;
                     setTimeout(typeNextCharacter, speed);
                 } else {
@@ -95,13 +95,13 @@ export default {
             };
             typeNextCharacter();
         },
-        deleteMessage(message, callback) {
+        deleteMessage(message: string, callback: () => void) {
             const speed = 50; // Typing speed (in milliseconds)
             let index = message.length - 1;
 
             const deleteNextCharacter = () => {
                 if (index >= 0) {
-                    this.$refs.typedText.textContent = message.substring(0, index);
+                    (this.$refs.typedText as HTMLElement).textContent = message.substring(0, index);
                     index--;
                     setTimeout(deleteNextCharacter, speed);
                 } else {
