@@ -1,11 +1,12 @@
 <template>
     <div>
+        <div class="mouse-light"></div>
         <header class="">
             <MobileNavbar class="mobile" v-if="isMobile" />
             <SocialProfile class="desktop" v-if="!isMobile" />
         </header>
         <div>
-            <slot class="slot"/>
+            <slot class="slot" />
         </div>
         <footer>
             <NavBar class="desktop" v-if="!isMobile" />

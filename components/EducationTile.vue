@@ -67,10 +67,12 @@ const { education: education } = defineProps(["education"]);
 
   .college {
     padding-bottom: 1.5%;
+    transition: font-size 0.2s;
   }
 
   .degree {
     padding-bottom: 1%;
+    transition: font-size 0.2s;
   }
 
   .year {
@@ -84,6 +86,18 @@ const { education: education } = defineProps(["education"]);
   .course-title {
     padding-bottom: 1%;
     font-size: larger;
+  }
+  
+  .education-tile:hover {
+    background-color: #2d3748;
+  }
+
+  .college:hover {
+    font-size: 2.7rem;
+  }
+  
+  .degree:hover {
+    font-size: 1.7rem;
   }
 }
 

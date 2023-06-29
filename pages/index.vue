@@ -36,7 +36,7 @@ export default {
             this.animateTextTyping();
             this.isMobile = window.innerWidth < 900;
             if (this.isMobile) {
-                const roles = this.$refs.roles;
+                const roles: HTMLElement = this.$refs.roles as HTMLElement;
                 roles.setAttribute("align", "center");
             }
         },
