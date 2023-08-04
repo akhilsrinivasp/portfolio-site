@@ -6,7 +6,7 @@
 		<div class="mobile-title">
 			Education
 		</div>
-		<div v-for="edu in education" :key="edu.id">
+		<div v-for="edu in education">
 			<EducationTile :education="edu" class="items-center" />
 		</div>
 		<span class="spacer-bottom">
@@ -14,16 +14,18 @@
 		</span>
 	</div>
 </template>
-<script>
+<script setup lang="ts">
 import educationData from "~/assets/data/education_details.json";
-export default {
-	// import data form assets/data/education-details.json
-	data() {
-		return {
-			education: educationData
-		}
-	}
-}
+// courses is a an array of string
+type education_details = {
+	site: string;
+	degree: string;
+	college: string;
+	year: string;
+	grade: string;
+	courses: string[];
+}; 
+const education: education_details[] = educationData;
 </script>
 <style>
 .education {

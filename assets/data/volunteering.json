@@ -1,0 +1,39 @@
+[
+    {
+        "organisation": "Ayuda NGO",
+        "description": "Ayuda NGO, founded in 2013 by a passionate group of students, embarked on a mission to create a positive impact in the world. With a dedicated team and diverse projects, Ayuda has gained recognition for their efforts in tackling issues such as sexual violence, supporting differently-abled organizations, and raising awareness about drug abuse. Their journey is marked by diligence, team spirit, and a commitment to being the change they want to see.",
+        "logo": "/assets/images/ayuda-logo.png",
+        "link": "https://ngoayuda.org/",
+        "roles": [
+            {
+                "role": "Chairperson",
+                "duration": "Jan 2023 - Present",
+                "work": "I skillfully led and coordinated a diverse team of 600 members, overseeing the effective management of 7 separate domains within the organization. Through my leadership, we successfully organized and executed over 10 impactful events, while also mentoring and training a group of 10 individuals to excel in leadership roles."
+            },
+            {
+                "role": "Co-Secretary",
+                "duration": "Jan 2022 - Dec 2023",
+                "work": "I was responsible for the smooth functioning of the organization, and was in charge of the recruitment and training of 450 members. I also led the podcast domain with tightly knitt team of 15 people, and was responsible for the overseeing of outreach domain."
+            },
+            {
+                "role": "Core Committee Member",
+                "duration": "June 2021 - Dec 2022",
+                "work": "I was a part of the outreach domain. I used to teach kids of orphanages and involved in the founding stages of the podcast domain - The Social Muse."
+            }
+        ]
+    },
+    {
+        "organisation": "Cosmos - Tech Society",
+        "description": "Cosmos, formerly known as Cosmos IIT Madras BSc - Technical Club of Saranda, is the vibrant technical society of IIT Madras BS. Comprising a dedicated community of tech enthusiasts, we foster a passion for continuous learning and knowledge-sharing. Through a range of meticulously organized events and workshops, we empower students to expand their skills and flourish, fostering a culture of collective growth and collaboration.",
+        "logo": "/assets/images/cosmos-logo.png",
+        "link": "https://cosmos-iitm.netlify.app/",
+        "roles": [
+            {
+                "role": "Chairperson",
+                "duration": "Jan 2022 - Present",
+                "work": "I skillfully led and coordinated a diverse team of 150 members, overseeing the effective management of 3 separate domains within the organization. Through my leadership, we successfully organized and executed over 5 impactful events, while also mentoring and training a group of 5 individuals to excel in leadership roles."
+            }
+            
+        ]
+    }
+]

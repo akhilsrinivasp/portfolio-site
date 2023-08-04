@@ -1,0 +1,14 @@
+[
+    {   
+        "company": "Powstik, Aadya Pvt. Ltd.",
+        "logo": "/assets/images/powstik-logo.png",
+        "description": "Powstik.com is an e-commerce site specializing in organic and healthy products. They provide consultations and offer monthly essential packs to support individuals in maintaining a balanced and healthy lifestyle.",
+        "position": "Backend Developer Intern",
+        "period": "May 2022 - July 2022",
+        "location": "Remote",
+        "work": [
+            "Developed a full-fledged E-Commerce application using the Flask Python framework, leveraging tools like YAML for configuration management and Postman for testing and documenting APIs.",
+            "Implemented Python routes to enable efficient data posting and retrieval through APIs, ensuring a seamless functioning of the application.","Gained valuable experience in back-end development, data management, and utilizing tools like YAML and Postman within an E-Commerce context."
+        ]
+    }
+]

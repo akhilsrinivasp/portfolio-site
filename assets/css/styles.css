@@ -2,6 +2,7 @@
 
 body {
   background-color: #1a202c;
+  /* background-color: #fff; */
   font-family: 'Montserrat';
 }
 
@@ -15,3 +16,7 @@ body {
     opacity: 0;
     transform: translateY(-100px);
 }
+
+/* * {
+  cursor: none !important;
+} */
