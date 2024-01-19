@@ -3,7 +3,8 @@
         <div class="intern-tile" @mouseover="hover=true" @mouseleave="hover=false">
             <div class="company-logo-container ease duration-500">
                 <div class="company-logo ease duration-500">
-                    <img :src="intern.logo" alt="company logo" />   
+                    <!-- <img :src="intern.logo" alt="company logo" />  -->
+                    <img :src="logoUrl" alt="company logo" />  
                 </div>
             </div>
             <div class="intern-details-container">
@@ -30,6 +31,8 @@
     </div>
 </template>
 <script setup lang="ts">
+import { ref, watchEffect } from 'vue';
+
 const { intern: intern } = defineProps(["intern"]);
 const hover= ref(false)
 type intern_details = {
@@ -42,7 +45,16 @@ type intern_details = {
         work: string[]
     }
 // function addDescription adds description and work when the user hovers over the tile
+const logoUrl = ref('');
 
+watchEffect(() => {
+    import(`${intern.logo}`).then(module => {
+        logoUrl.value = module.default;
+    }).catch(error => {
+        console.error('Error importing logo:', error);
+        // You can set a default image or handle the error as needed
+    });
+});
 </script>
 <style scoped>
 .tile {

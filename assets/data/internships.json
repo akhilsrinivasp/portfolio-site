@@ -1,5 +1,15 @@
 [
     {   
+        "company": "Oracle India Private Limited, IDC",
+        "logo": "/assets/images/oracle_logo.png",
+        "description": "Oracle Communications provides technology solutions for telecommunications companies, focusing on network operations, service delivery, and customer engagement. They offer products and services for managing complex networks, optimizing operations, and enhancing customer experiences.",
+        "position": "Project Intern",
+        "period": "January 2024 - Present",
+        "location": "Remote",
+        "work": [ "Working in the Communications Divison of Oracle India."
+        ]
+    },
+    {   
         "company": "Powstik, Aadya Pvt. Ltd.",
         "logo": "/assets/images/powstik_logo.png",
         "description": "Powstik.com is an e-commerce site specializing in organic and healthy products. They provide consultations and offer monthly essential packs to support individuals in maintaining a balanced and healthy lifestyle.",
